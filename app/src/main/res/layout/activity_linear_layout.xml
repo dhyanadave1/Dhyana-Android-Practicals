@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="@string/tvInstruction"
+            android:textColor="@color/grey"
+            android:textSize="28sp" />
+
+        <EditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tvName"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:paddingTop="22dp"
+            android:textSize="22sp"
+            android:background="@drawable/textview"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"> </EditText>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/etEmail"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:paddingTop="22dp"
+            android:textSize="22sp"
+            android:background="@drawable/textview"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"> </EditText>
+
+        <EditText
+            android:id="@+id/etFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_text_details"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:minLines="5"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:background="@drawable/textview"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"> </EditText>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:buttonTint="@color/white"
+            android:text="@string/checkbox_text_response"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <Button
+            android:id="@+id/btnFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:text="@string/button_text_send"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/textview"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+

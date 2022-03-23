@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/tvEnterFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/tvInstruction"
+        android:textColor="@color/grey"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/tvEnterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEnterFeedback"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/textview"
+        android:hint="@string/tvName"
+        android:padding="@dimen/_10sdp" />
+
+    <EditText
+        android:id="@+id/tvEnterMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEnterName"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/textview"
+        android:hint="@string/etEmail"
+        android:padding="@dimen/_10sdp" />
+
+    <EditText
+        android:id="@+id/etFeedbackEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEnterMail"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/textview"
+        android:hint="@string/hint_text_details"
+        android:inputType="textMultiLine"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_70sdp" />
+
+    <CheckBox
+        android:id="@+id/cbClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etFeedbackEnter"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:buttonTint="@color/white"
+        android:text="@string/checkbox_text_response"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp" />
+
+    <Button
+        android:layout_below="@+id/cbClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/textview"
+        android:text="@string/button_text_send"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_15sdp" />
+
+</RelativeLayout>
+
