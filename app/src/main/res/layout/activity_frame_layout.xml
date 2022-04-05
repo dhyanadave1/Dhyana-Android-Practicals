@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrameLayoutActivity"
+    android:background="@color/black">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:columnCount="1"
+        android:rowCount="6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_6sdp"
+            android:text="@string/tvInstruction"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tvName"
+            android:inputType="textPersonName"
+            android:paddingTop="@dimen/_22sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/textview"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"> </EditText>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/etEmail"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:paddingTop="@dimen/_22sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:background="@drawable/textview"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:foregroundGravity="bottom"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"> </EditText>
+
+        <EditText
+            android:id="@+id/etFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_text_details"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="5"
+            android:paddingTop="@dimen/_22sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="@drawable/textview"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+         <CheckBox
+            android:id="@+id/cbResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/checkbox_text_response"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <Button
+            android:id="@+id/btnFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/button_text_send"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_20sdp"
+            android:background="@drawable/textview"/>
+    </GridLayout>
+</FrameLayout>
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintLayoutActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6sdp"
+        android:text="@string/tvInstruction"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_28sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tvName"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:paddingTop="@dimen/_22sdp"
+        android:textSize="@dimen/_22sdp"
+        android:background="@drawable/textview"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvText"> </EditText>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/etEmail"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_10sdp"
+        android:paddingTop="@dimen/_22sdp"
+        android:textSize="@dimen/_22sdp"
+        android:background="@drawable/textview"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/etName"> </EditText>
+
+    <EditText
+        android:id="@+id/etFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_text_details"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_22sdp"
+        android:background="@drawable/textview"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"> </EditText>
+
+    <CheckBox
+        android:id="@+id/cbText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6sdp"
+        android:buttonTint="@color/white"
+        android:text="@string/checkbox_text_response"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/etFeedback" />
+
+    <Button
+        android:id="@+id/btnFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_15sdp"
+        android:text="@string/button_text_send"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_20sdp"
+        android:background="@drawable/textview"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/cbText"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
