@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Chapter2Programs</string>
+    <string name="tvName"> Enter Your Name </string>
+    <string name="etEmail"> Enter Your Email </string>
+    <string name="hint_text_details"> "Feedback Details..." </string>
+    <string name="checkbox_text_response"> "Would you like an email response?" </string>
+    <string name="button_text_send"> Submit </string>
+    <string name="tvInstruction">Enter feedback details to send to the developers </string>
+    <string name="ch2">Chapter 2</string>
+    <string name="ch3">Chapter 3</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="table_layout">Table Layout</string>
+    <string name="title_movie_ui">Beauty and the Beast UI</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="title_ui"> Beauty and the Beast </string>
+    <string name="movie_date_and_time"> March 2017 PG| 129 min </string>
+    <string name="movie_rent"> RENT FROM R29.99</string>
+    <string name="movie_price"> BUY FROM R129.99 </string>
+    <string name="rating"> 242 ratings </string>
+    <string name="similar_icon"> Similar </string>
+    <string name="family_icon"> Family </string>
+    <string name="tvFirstDes"> 71% </string>
+    <string name="title_activity_android_layout"> Hello </string>
+    <string name="feedback_submit">Feedback Submitted</string>
+    <string name="imageDesc">Movie Image</string>
+    <string name="coreText"> "The story and characters you know and love come to spectacular life in the live-action adaption of Disney's animated classic Beauty and the Beast." </string>
 </resources>
