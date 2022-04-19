@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Chapter2Programs</string>
+    <string name="expandableLV">Expandable List View</string>
+    <string name="expandableRV">Expandable Recycler View</string>
+    <string name="itemDecoration">Item Decoration</string>
+    <string name="gridView">Grid view using recycler view</string>
+    <string name="viewPager">View Pager</string>
+    <string name="btmNav">Bottom Navigation</string>
+    <string name="rv">Recycler View</string>
+    <string name="cName">Code Name</string>
+    <string name="version">Version</string>
+    <string name="apiLevel">Api level</string>
+    <string name="descText">Description Textview</string>
 </resources>

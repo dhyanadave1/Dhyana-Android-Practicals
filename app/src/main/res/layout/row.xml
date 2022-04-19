@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_2sdp"
+    app:cardElevation="@dimen/_3sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:background="@color/DarkBlue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cName"
+            android:id="@+id/code_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22sdp"
+            android:padding="@dimen/_16sdp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandable_layout"
+            android:visibility="visible"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_16sdp"
+                android:text="@string/version"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"/>
+
+            <TextView
+                android:id="@+id/api_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apiLevel"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:padding="@dimen/_16sdp"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/version"
+                android:padding="@dimen/_16sdp"
+                android:text="@string/descText"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

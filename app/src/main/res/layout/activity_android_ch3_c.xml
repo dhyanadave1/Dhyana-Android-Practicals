@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8ac"
+    tools:context=".AndroidCh3C">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnELV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/DarkBlue"
+        android:paddingLeft="@dimen/_55sdp"
+        android:paddingRight="@dimen/_55sdp"
+        android:text="@string/expandableLV"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnERv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/DarkBlue"
+        android:text="@string/expandableRV"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btnELV"
+        app:layout_constraintStart_toStartOf="@+id/btnELV"
+        app:layout_constraintTop_toBottomOf="@+id/btnELV"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnItD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/DarkBlue"
+        android:text="@string/itemDecoration"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/btnERv"
+        app:layout_constraintStart_toStartOf="@id/btnERv"
+        app:layout_constraintTop_toBottomOf="@+id/btnERv"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGRV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/DarkBlue"
+        android:text="@string/gridView"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/btnItD"
+        app:layout_constraintStart_toStartOf="@id/btnItD"
+        app:layout_constraintTop_toBottomOf="@+id/btnItD"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/DarkBlue"
+        android:text="@string/viewPager"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/btnGRV"
+        app:layout_constraintStart_toStartOf="@id/btnGRV"
+        app:layout_constraintTop_toBottomOf="@+id/btnGRV"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNavi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/DarkBlue"
+        android:text="@string/btmNav"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/btnVP"
+        app:layout_constraintStart_toStartOf="@id/btnVP"
+        app:layout_constraintTop_toBottomOf="@+id/btnVP"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/DarkBlue"
+        android:text="@string/rv"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/btnVP"
+        app:layout_constraintStart_toStartOf="@id/btnVP"
+        app:layout_constraintTop_toBottomOf="@id/btnNavi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
