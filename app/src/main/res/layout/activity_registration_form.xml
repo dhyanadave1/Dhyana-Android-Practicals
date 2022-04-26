@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationFormActivity"
+    android:background="@drawable/background_ui"
+    android:id="@+id/constraint_layout">
+
+        <TextView
+            android:id="@+id/tvFormName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_name"
+            android:textSize= "@dimen/_25sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:paddingStart="@dimen/_10sdp"
+            android:drawableStart="@drawable/ic_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/validation_valid_user_name"
+            android:background="@android:color/white"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvFormName"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/etMobileNumber"
+            android:drawableStart="@drawable/ic_phone"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/validation_valid_mobile_number"
+            android:background="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_18sdp"
+            app:layout_constraintTop_toBottomOf="@+id/etUserName" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/etMobileNumber"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_19sdp"
+            android:textSize="@dimen/_15sdp"/>
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tvGender"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/_1sdp">
+
+            <RadioButton
+                android:id="@+id/rgFirstGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tvGender"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:paddingStart="@dimen/_5sdp"
+                android:textSize="@dimen/_15sdp"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/rgSecondGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tvGender"
+                app:layout_constraintLeft_toRightOf="@+id/rgFirstGender"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:text="@string/female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/skills"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/rgGender"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textSize="@dimen/_15sdp"/>
+
+        <CheckBox
+            android:id="@+id/cbFirstSkill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvSkills"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/kotlin"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_1sdp"/>
+
+        <CheckBox
+            android:id="@+id/cbSecondSkill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvSkills"
+            app:layout_constraintStart_toStartOf="@+id/cbFirstSkill"
+            android:layout_marginStart="@dimen/_89sdp"
+            android:textSize="@dimen/_15sdp"
+            android:text="@string/swift"
+            android:layout_marginTop="@dimen/_1sdp"/>
+
+        <TextView
+            android:id="@+id/tvTrainee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trainee_verification"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbFirstSkill"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+        <ToggleButton
+            android:id="@+id/tbTrainee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff= "@string/no"
+            android:textOn="@string/yes"
+            android:checked="true"
+            app:layout_constraintStart_toStartOf="@id/tvTrainee"
+            app:layout_constraintTop_toBottomOf="@+id/tvTrainee"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fees_verify"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_18sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tbTrainee"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/mySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/switchConstraint"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tbTrainee"
+            app:layout_constraintLeft_toRightOf="@id/tvFee"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_7sdp"/>
+
+        <TextView
+            android:id="@+id/tvUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/image_upload"
+            app:layout_constraintStart_toStartOf="@id/tvFee"
+            app:layout_constraintTop_toBottomOf="@id/tvFee"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"/>
+
+        <ImageButton
+            android:id="@+id/ibImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cloud"
+            app:layout_constraintTop_toBottomOf="@+id/mySwitch"
+            app:layout_constraintLeft_toRightOf="@+id/tvUpload"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintWidth="@dimen/_50sdp"
+            app:layout_constraintHeight="@dimen/_35sdp"
+            android:background="@color/light_blue"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+        <Button
+            android:id="@+id/myButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background = "@color/dark_purple"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="@string/submit_button"
+            app:layout_constraintTop_toBottomOf="@+id/ibImageButton"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="@+id/tvUpload"
+            android:layout_marginStart="@dimen/_95sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
