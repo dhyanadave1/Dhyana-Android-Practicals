@@ -11,4 +11,7 @@
     <color name="light_blue"> #ADD8E6 </color>
     <string name="pink">#F44366</string>
     <color name="grey">#696969</color>
+    <color name="light_yellow"> #ECE98D</color>
+    <color name="Green">#FF8BC34A</color>
+    <color name="Cyan">#26CABA</color>
 </resources>

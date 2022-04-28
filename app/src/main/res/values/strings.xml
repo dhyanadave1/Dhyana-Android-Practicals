@@ -45,4 +45,13 @@
     <string name="feedback_submit">Feedback Submitted</string>
     <string name="imageDesc">Movie Image</string>
     <string name="coreText"> "The story and characters you know and love come to spectacular life in the live-action adaption of Disney's animated classic Beauty and the Beast." </string>
+    <string name="favourite">Favourite</string>
+    <string name="home">Home</string>
+    <string name="firstFragment"> First Fragment </string>
+    <string name="secFragment">Second Fragment</string>
+    <string name="settings">Settings</string>
+    <string name="thirdFragment">Third Fragment</string>
+    <string name="first">First</string>
+    <string name="second">Second</string>
+    <string name="third">Third</string>
 </resources>
