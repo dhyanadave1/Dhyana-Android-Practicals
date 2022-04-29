@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Chapter2Programs">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+        </activity>
 
         <activity
-            android:name=".BottomNavigationActivity"
+            android:name=".ExpandableListViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
