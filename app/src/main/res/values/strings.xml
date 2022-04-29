@@ -1,17 +1,37 @@
 <resources>
     <string name="app_name">Chapter2Programs</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_grid_view_using_recycler_view">GridViewUsingRecyclerViewActivity
-    </string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment </string>
+    <string name="title_activity_grid_view_using_recycler_view">GridViewUsingRecyclerViewActivity</string>
+    <string name="title"> Title </string>
 
-    <string name="first"> Season 1 </string>
+    <string-array name="seasonFirst">
+        <item>Monsoon is coming</item>
+        <item>Lord snow</item>
+        <item>Street race</item>
+        <item>Princess frog</item>
+        <item>Golden Crown</item>
+    </string-array>
+
+    <string-array name="seasonSecond">
+        <item>Tiger vs Lion</item>
+        <item>Lord of Country</item>
+        <item>Story of king</item>
+        <item>Princess Aana</item>
+        <item>Lovely Garden</item>
+    </string-array>
+
+    <string-array name="seasonThird">
+        <item>Awesome fairy</item>
+        <item>Queen of Dholakpur</item>
+        <item>Story of Princess</item>
+        <item>Barbie movie</item>
+        <item>Magical Garden</item>
+    </string-array>
+
+    <string name="seasonFirstPart"> Season 1 </string>
+    <string name="seasonSecondPart"> Season 2 </string>
+    <string name="seasonThirdPart"> Season 3 </string>
+
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="form_name"> "Registration form" </string>
     <string name="validation_valid_full_username"> Enter full name </string>

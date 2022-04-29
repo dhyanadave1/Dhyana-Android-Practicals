@@ -14,32 +14,22 @@ class ExpandableListViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_expandable_list_view)
 
-        title = "Movies List"
+        title = getString(R.string.title)
 
-        val firstSeason: MutableList<String> = ArrayList()
-        firstSeason.add("Monsoon is coming")
-        firstSeason.add("Lord Snow")
-        firstSeason.add("Street race")
-        firstSeason.add("Princess Frog")
-        firstSeason.add("Golden Crown")
+        var firstSeason: MutableList<String> =ArrayList()
+        firstSeason = getResources().getStringArray(R.array.seasonFirst).toMutableList()
 
-        val secondSeason: MutableList<String> = ArrayList()
-        secondSeason.add("Summer is coming")
-        secondSeason.add("Lord Lion")
-        secondSeason.add("Temp 53")
-        secondSeason.add("Crown of a king")
-        secondSeason.add("Golden door")
 
-        val thirdSeason: MutableList<String> = ArrayList()
-        thirdSeason.add("Tiger vs Lion")
-        thirdSeason.add("Lord of Country")
-        thirdSeason.add("Story of king")
-        thirdSeason.add("Queen of fairy ")
-        thirdSeason.add("Lovely Garden")
+        var secondSeason: MutableList<String> = ArrayList()
+        secondSeason = getResources().getStringArray(R.array.seasonSecond).toMutableList()
 
-        header.add()
-        header.add("Season2")
-        header.add("Season3")
+
+        var thirdSeason: MutableList<String> = ArrayList()
+        thirdSeason = getResources().getStringArray(R.array.seasonSecond).toMutableList()
+
+        header.add(getString(R.string.seasonFirstPart))
+        header.add(getString(R.string.seasonSecondPart))
+        header.add(getString(R.string.seasonThirdPart))
 
         body.add(firstSeason)
         body.add(secondSeason)

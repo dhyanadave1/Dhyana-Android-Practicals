@@ -10,7 +10,6 @@ import com.example.chapter2programs.R
 
 class MyRecyclerViewAdapter(private val items: List<DataClassForRecyclerViewDecoration>) :
     RecyclerView.Adapter<MyRecyclerViewAdapter.MyRecyclerViewDataHolder>() {
-
     inner class MyRecyclerViewDataHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyRecyclerViewDataHolder {
