@@ -87,4 +87,6 @@
     <string name="first">First</string>
     <string name="second">Second</string>
     <string name="third">Third</string>
+    <string name="first_fragment_label"> first fragment </string>
+    <string name="second_fragment_label"> Sec fragment </string>
 </resources>

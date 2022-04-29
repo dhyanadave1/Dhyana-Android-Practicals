@@ -29,11 +29,4 @@
 
     <style name="Theme.Chapter2Programs.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="Theme.Chapter2Programs.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="Theme.Chapter2Programs.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <style name="Theme.Chapter2Programs.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
